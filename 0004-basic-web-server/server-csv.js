@@ -1,6 +1,6 @@
 const { createServer } = require('http');
 
-const PORT = '8080';
+const PORT = '80';
 
 const requestListener = function (req, res) {
     res.setHeader('Content-Type', 'text/csv');
@@ -11,5 +11,5 @@ const requestListener = function (req, res) {
 const server = createServer(requestListener);
 
 server.listen(PORT, () => {
-    console.log(`Server is running on http://${HOST}:${PORT}`);
+    console.log(`Server is running on http://localhost`);
 });

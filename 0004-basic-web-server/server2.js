@@ -1,14 +1,18 @@
 const { createServer } = require('http');
 
-const PORT = '8080';
+const HOST = 'localhost'
+const PORT = '80';
 
 const requestListener = function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
     res.writeHead(200);
-    res.end("My first node web server!");
+    res.end(JSON.stringify({ school: `John Bryce`,
+        footballer: `LUKAKUUUUUUUUUUUUUU`
+}));
 };
 
 const server = createServer(requestListener);
 
 server.listen(PORT, () => {
-    console.log(`Server is running on http://${HOST}:${PORT}`);
+    console.log(`Server is running on http://${HOST}`);
 });
