@@ -1,7 +1,9 @@
 {
   "dependencies": {
-    "axios": "^1.4.0",
-    "express": "^4.18.2",
-    "jstoxml": "^3.2.7"
+    "array-map-slice": "^0.1.0",
+    "axios": "^1.6.7",
+    "express": "^4.18.3",
+    "jstoxml": "^3.2.7",
+    "xml-js": "^1.6.11"
   }
 }
